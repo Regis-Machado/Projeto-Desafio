@@ -1,0 +1,55 @@
+.jogo {
+  width: 600px;
+  height: 200px;
+  border: 1px solid white;
+  margin: auto;
+}
+
+#personagem {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../img/trex.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+.salto {
+  animation: salto 0.3s linear;
+}
+
+@keyframes salto {
+  0% {
+    top: 150px;
+  }
+
+  50% {
+    top: 75px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+#obstaculo {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  background-image: url("../../img/cactus.png");
+  background-size: 20px 40px;
+
+  animation: obstaculo 1s infinite linear;
+}
+
+@keyframes obstaculo {
+  0% {
+    left:580pX;
+  }
+
+  100% {
+    left: -10px;
+  }
+}
